@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Grant &amp; Jazmin</title>
+  <meta name="description" content="Join us as we celebrate our wedding.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <a href="#top" class="mono" id="navMono">&amp;</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+      <ul id="navLinks">
+        <li><a href="#story" data-sec="story">Our Story</a></li>
+        <li><a href="#photos" data-sec="photos">Photos</a></li>
+        <li><a href="#day" data-sec="schedule">The Day</a></li>
+        <li><a href="#attire" data-sec="attire">Attire</a></li>
+        <li><a href="#travel" data-sec="travel">Travel</a></li>
+        <li><a href="#registry" data-sec="registry">Registry</a></li>
+        <li><a href="#faq" data-sec="faq">Q &amp; A</a></li>
+        <li><a href="#rsvp" data-sec="rsvp">RSVP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero on-ink" id="top">
+    <div class="bg" id="heroBg"></div>
+    <div class="scrim"></div>
+    <div class="wrap">
+      <div class="frame">
+        <span class="eyebrow" style="color:#b8b6b2">Together with their families</span>
+        <h1 class="names" id="heroNames">&amp;</h1>
+        <div class="date-line" id="heroDateLine"></div>
+        <div class="countdown" id="countdown"></div>
+        <div class="actions">
+          <a class="btn" href="#rsvp">RSVP</a>
+          <a class="btn ghost" href="#day">The Day</a>
+        </div>
+      </div>
+      <p class="welcome" id="heroWelcome"></p>
+    </div>
+  </header>
+
+  <!-- ============ OUR STORY ============ -->
+  <section class="band" id="story" data-sec="story">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How it all began</span>
+        <h2 class="section-title">Our Story</h2>
+        <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true"><line x1="0" y1="7" x2="50" y2="7"/><circle cx="60" cy="7" r="2.5"/><line x1="70" y1="7" x2="120" y2="7"/></svg>
+        <p class="lede" id="storyIntro"></p>
+      </div>
+      <div class="story-grid" id="storyGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ PHOTOS ============ -->
+  <section class="band alt" id="photos" data-sec="photos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">A few of our favorites</span>
+        <h2 class="section-title">Photos</h2>
+        <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true"><line x1="0" y1="7" x2="50" y2="7"/><circle cx="60" cy="7" r="2.5"/><line x1="70" y1="7" x2="120" y2="7"/></svg>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- ============ THE DAY ============ -->
+  <section class="band on-ink" id="day" data-sec="schedule">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Schedule of events</span>
+        <h2 class="section-title">The Day</h2>
+        <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true"><line x1="0" y1="7" x2="50" y2="7"/><circle cx="60" cy="7" r="2.5"/><line x1="70" y1="7" x2="120" y2="7"/></svg>
+      </div>
+      <div class="day-summary" id="daySummary"></div>
+      <div class="timeline" id="timeline"></div>
+      <div class="map-wrap" id="mapWrap" hidden></div>
+    </div>
+  </section>
+
+  <!-- ============ ATTIRE ============ -->
+  <section class="band" id="attire" data-sec="attire">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What to wear</span>
+        <h2 class="section-title">Attire</h2>
+        <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true"><line x1="0" y1="7" x2="50" y2="7"/><circle cx="60" cy="7" r="2.5"/><line x1="70" y1="7" x2="120" y2="7"/></svg>
+      </div>
+      <div class="attire-grid">
+        <div class="attire-card reveal">
+          <span class="eyebrow">Dress code</span>
+          <div class="code" id="attireCode"></div>
+          <span class="eyebrow" id="attireSub"></span>
+        </div>
+        <div class="attire-copy reveal" id="attireCopy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAVEL ============ -->
+  <section class="band alt" id="travel" data-sec="travel">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Getting there &amp; staying</span>
+        <h2 class="section-title">Travel &amp; Hotels</h2>
+        <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true"><line x1="0" y1="7" x2="50" y2="7"/><circle cx="60" cy="7" r="2.5"/><line x1="70" y1="7" x2="120" y2="7"/></svg>
+        <p class="lede" id="travelIntro"></p>
+      </div>
+      <div class="travel-facts" id="travelFacts"></div>
+      <div class="hotels" id="hotels"></div>
+    </div>
+  </section>
+
+  <!-- ============ REGISTRY ============ -->
+  <section class="band" id="registry" data-sec="registry">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Gifts</span>
+        <h2 class="section-title">Registry</h2>
+        <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true"><line x1="0" y1="7" x2="50" y2="7"/><circle cx="60" cy="7" r="2.5"/><line x1="70" y1="7" x2="120" y2="7"/></svg>
+        <p class="lede" id="registryIntro"></p>
+      </div>
+      <div class="registries" id="registries"></div>
+    </div>
+  </section>
+
+  <!-- ============ SHARE PHOTOS ============ -->
+  <section class="band alt" id="share" data-sec="photoShare">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">From your camera roll to ours</span>
+        <h2 class="section-title">Share Your Photos</h2>
+        <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true"><line x1="0" y1="7" x2="50" y2="7"/><circle cx="60" cy="7" r="2.5"/><line x1="70" y1="7" x2="120" y2="7"/></svg>
+      </div>
+      <div class="share reveal" id="shareBox"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="band" id="faq" data-sec="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Good to know</span>
+        <h2 class="section-title">Q &amp; A</h2>
+        <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true"><line x1="0" y1="7" x2="50" y2="7"/><circle cx="60" cy="7" r="2.5"/><line x1="70" y1="7" x2="120" y2="7"/></svg>
+      </div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section class="band on-ink" id="rsvp" data-sec="rsvp">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Kindly reply</span>
+        <h2 class="section-title">RSVP</h2>
+        <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true"><line x1="0" y1="7" x2="50" y2="7"/><circle cx="60" cy="7" r="2.5"/><line x1="70" y1="7" x2="120" y2="7"/></svg>
+        <p class="lede" id="rsvpIntro"></p>
+        <span class="rsvp-deadline" id="rsvpDeadline"></span>
+      </div>
+      <div class="rsvp-box reveal" id="rsvpBox"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="script" id="footMono">&amp;</div>
+    <div class="fine" id="footDate"></div>
+    <div class="fine" id="footNote"></div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

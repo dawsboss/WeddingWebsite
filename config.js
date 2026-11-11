@@ -154,6 +154,7 @@ window.WEDDING = {
 
     // Extra questions in the guestlist form (the meal is a BBQ buffet, so no meal pick)
     askDietary: true,
+    dietaryLabel: "Dietary restrictions or allergies (dinner is a BBQ buffet)",
     askSong: true,
   },
 

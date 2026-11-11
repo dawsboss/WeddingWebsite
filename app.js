@@ -289,7 +289,7 @@
               </div>
             </div>`).join("")}
         </div>
-        ${rs.askDietary !== false ? `<div class="field"><label for="gl_diet">Dietary restrictions or allergies (dinner is a BBQ buffet)</label><input id="gl_diet" value="${esc(p.dietary)}"></div>` : ""}
+        ${rs.askDietary !== false ? `<div class="field"><label for="gl_diet">${esc(rs.dietaryLabel || "Dietary restrictions or allergies")}</label><input id="gl_diet" value="${esc(p.dietary)}"></div>` : ""}
         ${rs.askSong !== false ? `<div class="field"><label for="gl_song">A song that will get you on the dance floor</label><input id="gl_song" value="${esc(p.song)}"></div>` : ""}
         <div class="field"><label for="gl_email">Email (so we can reach you)</label><input id="gl_email" type="email" autocomplete="email" value="${esc(p.email)}"></div>
         <div class="field"><label for="gl_note">A note for the couple</label><textarea id="gl_note">${esc(p.message)}</textarea></div>
